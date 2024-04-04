@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+
+}
+
+body {
+  background: linear-gradient(130deg, rgb(11, 5, 13),
+      rgb(71, 50, 29),
+      rgb(79, 50, 10),
+      rgb(48, 54, 16),
+      rgb(25, 25, 13));
+  ;
+}
+
+
+:root {
+  --knop-color: rgb(0, 100, 255);
+  --Tekstkleur-knop: rgb(255, 255, 255);
+  --Navigatie-button: rgb(150, 150, 150);
+  --Navigatie-button-tekst: rgb(20, 20, 20);
+  --background: linear-gradient(130deg, rgb(49, 23, 57),
+      rgb(155, 124, 93),
+      rgb(79, 50, 10),
+      rgb(48, 54, 16),
+      rgb(25, 25, 13));
+}
+
+header {
+  background-color: var(--Navigatiebalk);
+  padding: 35px;
+}
+
+/**/
+button {
+  margin-top: 30px;
+  position: relative;
+  left: 85%;
+  padding: 1%;
+  border: none;
+}
+
+.btn {
+  margin-right: 50px;
+  padding-left: 30px;
+  padding-right: 43px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  cursor: pointer;
+  background-color: var(--background);
+  color: white;
+
+}
+
+.btn span {
+  position: relative;
+  transition: 0.5s;
+  font-size: 3rem;
+}
+
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 2s;
+}
+
+.btn:hover span {
+  padding-right: 20px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+right: 0;
+}
+
+/* formulier */
+.form-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+fieldset {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* text box */
+textarea {
+  width: 792px;
+  height: 268px;
+}
+
+/* stuur fromulier btn */
+
+.send-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.send-btn>input {
+  background-color: var(--knop-color);
+  color: var(--Tekstkleur-knop);
+  padding: 14px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+
+}
+
+/* bedank bericht */
+.bedank-bericht {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 32.50vw 32.50vw 32.50vw;
+  grid-template-rows: 23vh 23vh 24vh;
+  color: antiquewhite;
+  font-size: 1.7rem;
+}
+
+.bedank-bericht>div {
+  display: flex;
+  justify-content: center;
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.bedank-bericht>div {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.bedank-bericht div>h2 {
+  margin-left: 30px;
+}

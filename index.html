@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Yannick Daantje</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaquery.css">
 </head>
+
 <body>
-    <h1>Yannick Daantje</h1>
+    <section class="landing-page" id="Home">
+        <div class="img">
+            <img src="/img/yannick.jpg" alt="">
+        </div>
+        <div class="tb">
+            <div class="left">Software - Developer</div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                  <a href="#home">Home</a>
+                  <a href="#about">About me</a>
+                  <a href="#ervaring">Ervaring</a>
+                  <a href="#project">Projecten</a>
+                  <a href="#projecten2">Projecten</a>
+                  <a href="#social">Contact-SocialMedia</a>
+                  <a href="#loc">location</a>
+                </div>
+              </div>
+            <div class="right">B1k</div>
+
+
+        </div>
+        <div class="empty">
+        </div>
+        <div class="ft">
+            Yannick <br> Daantje
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="about-me" id="about">
+        <header>
+            ABOUT ME
+            <div class="middle1">Software Developer</div>
+        </header>
+        <div class="img1">
+            <img src="/img/image.png" alt="">
+        </div>
+        <div class="text">
+            <p>Hallo mijn naam is Yannick-Daantje <br> ik ben 22 jaar oud eerste <br> jaar studeren aan ROC Mondriaan
+                in <br>
+                Nederland <br>
+                softwareontwikkelaar.</p>
+        </div>
+    </section>
+
+    <!-- ervaring-1 -->
+    <section class="ervaring" id="ervaring">
+        <header>
+            ERVARING
+        </header>
+        <div class="img1">
+            <img src="/img/escaperoom 2023-12-21 195519.png" alt="escaperoom">
+        </div>
+        <div class="img-2">
+            <img src="/img/hoger-lager 2023-12-21 195626.png" alt="hoger-lager">
+        </div>
+
+        <div class="text-1">
+            <p>01
+            <p class="name-pro-1">Hoger - lager</p>
+            <p class="namee-pro-1">eerste project dat ik individueel heb gemaakt, waarbij je twee kanten hebt en tegen
+                de computer moet
+                ingaan en raden of het hoger of lager is.</p>
+            </p>
+        </div>
+
+        <div class="text-2">
+            <p>02</p>
+            <p class="name-pro-1">escape room.</p>
+            <p class="namee-pro-1">een project waarbij we 5 kamers moesten maken in een groep van 5, waar we onze
+                vaardigheden op het gebied van javascript op de proef moesten stellen en teamwerk op de proef moesten
+                stellen.</p>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Ervaring 2 -->
+    <section class="ervaring-2" id="project">
+        <div class="img1">
+            <img src="/img/Screenshot 2024-03-24 032359 streaming.png" alt="">
+        </div>
+
+        <div class="img-2">
+            <img src="/img/Screenshot 2023-12-21 195342 4.png" alt="">
+        </div>
+
+        <div class="text-2">
+            <p>03</p>
+            <p class="name-pro-1">streaming-website</p>
+            <p class="namee-pro-1">een website waar u uw favoriete films/tv-programma's kunt bekijken.</p>
+            </p>
+
+        </div>
+
+        <div class="text-3">
+            <p>04</p>
+            <p class="name-pro-1">tic-tac-to</p>
+            <p class="namee-pro-1">project waarbij we javascript moesten gebruiken om een spel te maken dat we tegen de
+                computer of tegen een vriend konden spelen.</p>
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ervaring-3 -->
+    <section class="ervaring-3" id="project2">
+
+        <div class="text-3">
+            <p>04</p>
+            <p class="namee-proo-1">Website met als onderwerp 3 games in een groep met alle categorieën van het spel
+                gemaakt met javascript/Json/Nodejs.</p>
+            </p>
+
+        </div>
+        <div class="img1">
+            <img src="/img/Screenshot 2024-03-24 033409.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact" id="social">
+        <header>
+            Neem- <br> Contact- <br> Op-
+        </header>
+        <div class="img1">
+            <img src="/img/Screenshot_20221206_101429.png" alt="logo">
+        </div>
+        <div class="text-contact">
+            <p>Email <br> 302867649@student.rocmondriaan.nl
+
+            <div class="Contact-SocialMedia">
+                Address <br>
+                Brasserskade 1, 2612 CA Delft
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="contact-from">
+                <form id="contactForm" action="bedank.html" method="get">
+                    <label for="fname">First Name</label>
+                    <input class="form-name" type="text" id="fname" name="firstname" placeholder="Your name.." required
+                        oninput="checkForm()">
+
+                    <label for="email">E-mail</label>
+                    <input class="form-email" type="email" id="lname" name="email" placeholder="Email" required
+                        oninput="checkForm()">
+
+                    <label for="subject">Subject</label>
+                    <textarea class="form-subject" id="subject" name="subject" placeholder="Discription"
+                        style="height:200px" required oninput="checkForm()"></textarea>
+
+                    <input class="submit-btn" type="submit" value="Submit">
+                </form>
+                <div class="message" id="message">Message has been sent</div>
+            </div >
+
+            <div class="location" id="loc">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.090983620395!2d4.347339177030484!3d52.023440172874054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5d771b631e7%3A0xcbe808e083d3d558!2sROC%20Mondriaan!5e0!3m2!1sen!2snl!4v1707391156224!5m2!1sen!2snl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div class="logo">
+            <img src="/img/Screenshot_20221206_101429.png" alt="logo" />
+        </div>
+        <div>&copy; Copyright claim 2024 Yannick-Daantje</div>
+        </div>
+    </footer>
+
+
+
 </body>
+
 </html>
