@@ -1,4 +1,11 @@
 window.addEventListener('DOMContentLoaded', event => {
+    // Initialize AOS animation library
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
 
     // Navbar shrink function
     let navbarShrink = function () {
@@ -11,7 +18,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -42,4 +48,67 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Smooth scrolling for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70, // Adjust for navbar height
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Animate progress bars when they come into view
+    const animateProgressBars = () => {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            const rect = bar.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
+            
+            if (isVisible) {
+                const width = bar.getAttribute('style').split(':')[1].trim();
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            }
+        });
+    };
+
+    // Call once on page load
+    animateProgressBars();
+    
+    // And on scroll
+    window.addEventListener('scroll', animateProgressBars);
+
+    // Add active class to nav items when scrolling
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.scrollY >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
 });

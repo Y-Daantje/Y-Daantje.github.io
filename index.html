@@ -4,346 +4,481 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- bootstarp css link -->
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <!-- bootstarp css link -->
+  <meta name="description" content="Portfolio website of Yannick Daantje - Web Developer">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/style2.css">
-  <!-- icons link -->
+  <!-- Boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- icons link -->
-  <!-- js -->
-  <script defer src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="/js/page.js"></script>
-  <!-- js -->
-  <title>Prime_Cronos</title>
+  <title>Yannick Daantje | Web Developer</title>
 </head>
 
 <body>
   <!-- Navbar Start -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container px-4 px-lg-5">
-        <a href="#Home"><img src="/img/_74639863-1c75-4870-bd10-e1ee3d7a52f4-removebg-preview.png" alt=""
-            width="100"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
+      <div class="container">
+        <a href="#Home" class="navbar-brand d-flex align-items-center">
+          <img src="/img/_74639863-1c75-4870-bd10-e1ee3d7a52f4-removebg-preview.png" alt="Yannick Daantje Logo" width="80">
+          <span class="ms-2 fw-bold d-none d-sm-inline">Yannick Daantje</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class='bx bx-menu fs-3'></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <!--ms-auto  is used to make the menu float right-->
-            <li class="nav-item">
-              <a class="nav-link active fw-bolder text-dark fs-5" href="#Home">Home</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semibold" href="#Home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active  fw-bolder text-dark fs-5" href="#Developers">Developer</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semibold" href="#Developers">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bolder text-dark fs-5" href="#Features">Projects</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semibold" href="#Features">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bolder text-dark fs-5" href="#contact">Contact</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semibold" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semibold" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-warning px-4 py-2 fw-semibold" href="#contact">Hire Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
-
   <!-- Navbar End -->
 
-  <!-- showcase -->
+  <!-- Hero Section -->
   <main>
     <section id="Home" class="d-flex align-items-center text-light img-HD">
-      <!-- <div class="container-fluid"> -->
-      <div class="row justify-content-center ">
-        <img src="/img/christopher-gower-m_HRfLhgABo-unsplash.jpg">
+      <img src="/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Hero background">
+      <div class="hero-content">
+        <h1 class="text-white" data-aos="fade-up">Yannick Daantje</h1>
+        <p class="text-white" data-aos="fade-up" data-aos-delay="200">Web Developer & Designer</p>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <a href="#Features" class="btn btn-warning btn-lg px-5 py-3 me-3 fw-bold">View Projects</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">Contact Me</a>
+        </div>
       </div>
-      <!-- </div> -->
     </section>
+    <!-- Hero Section End -->
 
-    <!-- showcase -->
+    <!-- About Me Section -->
+    <section id="Developers">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2 class="fw-bold"><span class="text-warning">A</span>bout Me</h2>
+        </div>
 
-    <!-- Developers -->
-    <section class="bg-light" id="Developers">
-
-      <div class="container pt-5">
-        <h3 class="text-center  fw-bolder"> <span class="text-warning">A</span>bout-Me</h3>
-        <hr class="text-warning ">
-      </div>
-
-      <div class="container d-flex text-center justify-content-center">
-        <div class="row p-5 d-flex justify-content-center">
-
-          <div class="col-md-3">
-
-            <div class="card">
-              <img src="/img/WhatsApp Image 2024-06-20 at 00.58.52_b65c6f89.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4>Yannick Daantje</h4>
-                <hr>
-                <p class="card-text">Hoi ik ben de creator van all deze Projects.</p>
-              </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+            <div class="card border-0">
+              <img src="/img/WhatsApp Image 2024-06-20 at 00.58.52_b65c6f89.jpg" class="card-img-top rounded-circle img-fluid mx-auto" style="max-width: 250px;" alt="Yannick Daantje">
             </div>
-
+          </div>
+          
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <h3 class="mb-4">Yannick Daantje</h3>
+            <p class="lead mb-4">Web Developer & Designer passionate about creating beautiful, functional websites.</p>
+            <p class="mb-4">Hello! I'm the creator of all these projects. I specialize in front-end development with a focus on creating responsive and user-friendly interfaces. My goal is to build websites that not only look great but also provide an excellent user experience.</p>
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-warning px-4 py-2">Contact Me</a>
+              <a href="#Features" class="btn btn-outline-dark px-4 py-2">View Projects</a>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
+    <!-- About Me Section End -->
 
-    <!-- Developers -->
-
-    <!--  Features -->
-
+    <!-- Projects Section -->
     <section class="bg-light" id="Features">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2 class="fw-bold"><span class="text-warning">P</span>rojects</h2>
+          <p class="text-muted">Check out some of my recent work</p>
+        </div>
 
-      <div class="container py-5">
-        <h3 class="text-center  fw-bolder"><span class="text-warning">P</span>rojects</h3>
-        <hr class="text-warning ">
-      </div>
-
-      <div class="container d-flex text-center">
-        <div class="row g-5 p-5 d-flex justify-content-center">
-
-          <div class="col-md-5 ">
-            <div class="card shadow">
-              <img src="/img/escaperoom 2023-12-21 195519.png" class="card-img-top" alt="..." height="250px">
-              <div class="card-body ">
-                <h5 class="card-title">escape room.</h5>
-                <p class="card-text">eerste project dat ik individueel heb gemaakt, waarbij je twee kanten hebt en tegen
-                  de computer moet
-                  ingaan en raden of het hoger of lager is.</p>
-
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="/img/escaperoom 2023-12-21 195519.png" class="card-img-top" alt="Escape Room Project" style="height: 220px; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Escape Room</h5>
+                <p class="card-text">My first individual project where you navigate through different rooms and solve puzzles against the computer.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="badge bg-warning text-dark me-1">HTML</span>
+                    <span class="badge bg-warning text-dark me-1">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-dark">View Project</a>
+                </div>
               </div>
             </div>
           </div>
 
-
-          <div class="col-md-5">
-
-            <div class="card shadow">
-              <img src="/img/hoger-lager 2023-12-21 195626.png" class="card-img-top" alt="..." height="225px">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="/img/hoger-lager 2023-12-21 195626.png" class="card-img-top" alt="Hoger-Lager Game" style="height: 220px; object-fit: cover;">
+              </div>
               <div class="card-body">
-                <h5 class="card-title  fw-bolder">Hoger - Lager</h5>
-                <p class="card-text">een project waarbij we 5 kamers moesten maken in een groep van 5, waar we onze
-                  vaardigheden op het gebied van javascript op de proef moesten stellen en teamwerk op de proef moesten
-                  stellen.</p>
-
+                <h5 class="card-title fw-bold">Hoger - Lager</h5>
+                <p class="card-text">A team project where we created 5 rooms, testing our JavaScript skills and teamwork abilities.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="badge bg-warning text-dark me-1">HTML</span>
+                    <span class="badge bg-warning text-dark me-1">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-dark">View Project</a>
+                </div>
               </div>
             </div>
-
           </div>
 
-
-          <div class="col-md-5">
-
-            <div class="card shadow">
-              <img src="/img/Screenshot 2024-03-24 032359 streaming.png" class="card-img-top" alt="..." height="315-md">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="/img/Screenshot 2024-03-24 032359 streaming.png" class="card-img-top" alt="Streaming Website" style="height: 220px; object-fit: cover;">
+              </div>
               <div class="card-body">
-                <h5 class="card-title  fw-bolder">streaming-website</h5>
-                <p class="card-text">een website waar u uw favoriete films/tv-programma's kunt bekijken.</p>
-
+                <h5 class="card-title fw-bold">Streaming Website</h5>
+                <p class="card-text">A platform where users can watch their favorite movies and TV shows with a modern interface.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="badge bg-warning text-dark me-1">HTML</span>
+                    <span class="badge bg-warning text-dark me-1">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-dark">View Project</a>
+                </div>
               </div>
             </div>
-
           </div>
 
-          <div class="col-md-5">
-
-            <div class="card shadow">
-              <img src="/img/Screenshot 2023-12-21 195342 4.png" class="card-img-top" alt="..." height="290px">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="/img/Screenshot 2023-12-21 195342 4.png" class="card-img-top" alt="Tic-Tac-Toe Game" style="height: 220px; object-fit: cover;">
+              </div>
               <div class="card-body">
-                <h5 class="card-title  fw-bolder">tic-tac-to</h5>
-                <p class="card-text">project waarbij we javascript moesten gebruiken om een spel te maken dat we tegen
-                  de
-                  computer of tegen een vriend konden spelen.</p>
-
+                <h5 class="card-title fw-bold">Tic-Tac-Toe</h5>
+                <p class="card-text">A JavaScript project where users can play against the computer or against a friend in the classic game.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="badge bg-warning text-dark me-1">HTML</span>
+                    <span class="badge bg-warning text-dark me-1">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-dark">View Project</a>
+                </div>
               </div>
             </div>
-
           </div>
 
-          <div class="col-md-5">
-
-            <div class="card shadow">
-              <img src="/img/dashboard.png" class="card-img-top" alt="..." height="290px">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="/img/dashboard.png" class="card-img-top" alt="Dashboard Project" style="height: 220px; object-fit: cover;">
+              </div>
               <div class="card-body">
-                <h5 class="card-title  fw-bolder">Dash-Board</h5>
-                <p class="card-text">Make and see all your info on one screen for you and your clients "With a
-                  Dash-Board"</p>
-
+                <h5 class="card-title fw-bold">Dashboard</h5>
+                <p class="card-text">A comprehensive dashboard to view and manage all your information in one place for you and your clients.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="badge bg-warning text-dark me-1">HTML</span>
+                    <span class="badge bg-warning text-dark me-1">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-dark">View Project</a>
+                </div>
               </div>
             </div>
-
+          </div>
+          
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card h-100 bg-warning bg-opacity-10 border-warning">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center py-5">
+                <i class='bx bx-plus-circle bx-lg mb-3'></i>
+                <h5 class="card-title fw-bold">More Coming Soon</h5>
+                <p class="card-text">I'm constantly working on new projects. Check back soon for updates!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
+    <!-- Projects Section End -->
 
-    <!-- skills -->
-    <div class="conatiner">
-      <div class="row d-flex justify-content-center">
-        <div class="col-9">
-          <h4>Html-Css/Bootstrap-5</h4>
-          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100" style="height: 25px;">
-            <div class="progress-bar bg-warning" style="width: 75%">75%</div>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2 class="fw-bold"><span class="text-warning">S</span>kills</h2>
+          <p class="text-muted">Technologies I work with</p>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">HTML/CSS/Bootstrap 5</h5>
+                <span class="fw-bold">75%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">JavaScript</h5>
+                <span class="fw-bold">65%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">Java</h5>
+                <span class="fw-bold">20%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">Chart.js</h5>
+                <span class="fw-bold">35%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
           </div>
-          <h4 class="text-center">javascript</h4>
-          <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
-            aria-valuemax="100" style="height: 25px;">
-            <div class="progress-bar bg-dark text-light" style="width: 65%">65%</div>
-          </div>
-          <h4>Java</h4>
-          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
-            aria-valuemax="100" style="height: 25px;">
-            <div class="progress-bar bg-warning text-dark" style="width: 20%">20%</div>
-          </div>
-          <h4>Chart-js</h4>
-          <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
-            aria-valuemax="100" style="height: 25px;">
-            <div class="progress-bar bg-dark" style="width: 35%">35%</div>
+          
+          <div class="col-lg-10 mt-5" data-aos="fade-up" data-aos-delay="500">
+            <div class="row text-center">
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-html5 bx-lg text-warning'></i>
+                  <p class="mt-2">HTML5</p>
+                </div>
+              </div>
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-css3 bx-lg text-warning'></i>
+                  <p class="mt-2">CSS3</p>
+                </div>
+              </div>
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-javascript bx-lg text-warning'></i>
+                  <p class="mt-2">JavaScript</p>
+                </div>
+              </div>
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-bootstrap bx-lg text-warning'></i>
+                  <p class="mt-2">Bootstrap</p>
+                </div>
+              </div>
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-git bx-lg text-warning'></i>
+                  <p class="mt-2">Git</p>
+                </div>
+              </div>
+              <div class="col-4 col-md-2 mb-4">
+                <div class="skill-icon p-3">
+                  <i class='bx bxl-github bx-lg text-warning'></i>
+                  <p class="mt-2">GitHub</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- skills -->
+    </section>
+    <!-- Skills Section End -->
 
 
 
 
-    <!-- Contact -->
-
-    <section id="contact" class="contact section-bg bg-light py-5">
-      <div class="container aos-init aos-animate " data-aos="fade-up">
-
-        <div class="section-title ">
-          <h2 class="text-center  fw-bolder"> <span class="text-warning">C</span>ontact</h2>
-
-          <hr class="text-warning fw-bold fw-bolder">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2 class="fw-bold"><span class="text-warning">C</span>ontact</h2>
+          <p class="text-muted">Get in touch with me</p>
         </div>
 
-        <div class="row py-4">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
+        <div class="row gy-4 mt-3">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box h-100">
               <i class="bx bx-map text-warning"></i>
-              <h3 class=" fw-bolder">Our Address</h3>
+              <h3 class="fw-bold">Location</h3>
               <p>Brasserskade 1, 2612 CA Delft</p>
+              <p class="text-muted mt-2">The Netherlands</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box h-100">
               <i class="bx bx-envelope text-warning"></i>
-              <h3 class=" fw-bolder">Email Us</h3>
+              <h3 class="fw-bold">Email</h3>
               <p>contact@student.rocmondriaan.nl</p>
+              <p class="text-muted mt-2">I'll respond within 24 hours</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-box h-100">
               <i class="bx bx-phone-call text-warning"></i>
-              <h3 class=" fw-bolder">Tell</h3>
+              <h3 class="fw-bold">Phone</h3>
               <p>+31 6969 69 69</p>
+              <p class="text-muted mt-2">Mon-Fri: 9:00 AM - 5:00 PM</p>
             </div>
           </div>
-
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6 ">
+        <div class="row mt-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4910.179947353648!2d4.347315377227426!3d52.02345857193539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5d776440205%3A0xe5bfa517b4fd0e71!2sBrasserskade%201%2C%202612%20CA%20Delft!5e0!3m2!1snl!2snl!4v1713253149132!5m2!1snl!2snl"
-              width="600" height="450" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              style="border:0; width: 100%; height: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" 
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="zoom-in"></iframe>
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms" method="post" role="form" class="">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <form action="forms" method="post" role="form" class="php-email-form p-4 bg-white rounded-3 shadow-sm">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                <div class="col-md-6 form-group">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required>
                 </div>
               </div>
-              <select id="Select" class="form-select form-group mt-3">
-                <option>Select Menu</option>
-                <option>Pricing</option>
-                <option>website Desings</option>
-              </select>
+              
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                <label for="Select" class="form-label">Service Needed</label>
+                <select id="Select" class="form-select">
+                  <option selected>Select a service</option>
+                  <option>Website Design</option>
+                  <option>Web Development</option>
+                  <option>Project Collaboration</option>
+                </select>
               </div>
+              
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Project Inquiry" required>
               </div>
-              <div class=" d-flex  justify-content-center mt-5"><button class="btn btn-warning p-3">Send
-                  Message</button></div>
+              
+              <div class="form-group mt-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-warning px-4 py-3 fw-bold">
+                  <i class='bx bx-send me-2'></i> Send Message
+                </button>
+              </div>
             </form>
           </div>
-
         </div>
-
       </div>
     </section>
+    <!-- Contact Section End -->
 
-    <!-- Contact -->
 
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info" data-aos="fade-up" data-aos-delay="100">
+              <img src="/img/_74639863-1c75-4870-bd10-e1ee3d7a52f4-removebg-preview.png" alt="Logo" width="150" class="mb-4">
+              <p class="mb-4">Creating beautiful, functional websites that help businesses grow and succeed online.</p>
+              <div class="social-links d-flex mt-3">
+                <a href="https://github.com/Y-Daantje" target="_blank" class="me-3 text-white"><i class='bx bxl-github bx-md'></i></a>
+                <a href="https://x.com/DaantjeYannick" target="_blank" class="me-3 text-white"><i class='bx bxl-twitter bx-md'></i></a>
+                <a href="https://www.linkedin.com/in/yannick-daantje-613397222/" target="_blank" class="me-3 text-white"><i class='bx bxl-linkedin bx-md'></i></a>
+              </div>
+            </div>
+          </div>
 
-    <!-- footer -->
-    <div class="container ">
-      <footer class="py-5 ">
-        <div class="row  justify-content-between text-md-center">
-          <div class="col-6 col-md-2 mb-3 ">
-            <img src="/img/_74639863-1c75-4870-bd10-e1ee3d7a52f4-removebg-preview.png" alt="" width="170">
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#Home" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#Features" class="nav-link p-0 text-body-secondary">Projects</a>
-              </li>
-              <li class="nav-item mb-2"><a href="#Developers" class="nav-link p-0 text-body-secondary">Me</a>
-              </li>
-              <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a>
+          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#Home" class="text-white text-decoration-none"><i class='bx bx-chevron-right me-1'></i> Home</a></li>
+              <li class="mb-2"><a href="#Developers" class="text-white text-decoration-none"><i class='bx bx-chevron-right me-1'></i> About Me</a></li>
+              <li class="mb-2"><a href="#Features" class="text-white text-decoration-none"><i class='bx bx-chevron-right me-1'></i> Projects</a></li>
+              <li class="mb-2"><a href="#skills" class="text-white text-decoration-none"><i class='bx bx-chevron-right me-1'></i> Skills</a></li>
+              <li class="mb-2"><a href="#contact" class="text-white text-decoration-none"><i class='bx bx-chevron-right me-1'></i> Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-md-5 offset-md-1 mb-3 py-5">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2 py-3">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <p class="mb-2"><i class='bx bx-map me-2'></i> Brasserskade 1, 2612 CA Delft</p>
+            <p class="mb-2"><i class='bx bx-envelope me-2'></i> contact@student.rocmondriaan.nl</p>
+            <p class="mb-2"><i class='bx bx-phone me-2'></i> +31 6969 69 69</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <p>Subscribe to receive updates about my latest projects and tech insights</p>
+            <form class="mt-3">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" required>
+                <button class="btn btn-warning" type="submit"><i class='bx bx-paper-plane'></i></button>
               </div>
             </form>
           </div>
         </div>
-
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>© 2024 Prime_Cronos, Inc.</p>
-          <ul class="list-unstyled d-flex">
-            <a href="https://github.com/Y-Daantje" target="_blank">
-              <li class="ms-3 "><i class='bx bxl-github bx-lg' size="bx-lg"></i></li>
-            </a>
-            <a href="https://x.com/DaantjeYannick" target="_blank">
-              <li class="ms-3"><i class='bx bxl-twitter  bx-lg' width="120" height="240"></i></li>
-            </a>
-            <a " href=" https://www.linkedin.com/in/yannick-daantje-613397222/" target="_blank">
-              <li class="ms-3"><i class='bx bxl-linkedin  bx-lg' width="120" height="240"></i></li>
-            </a>
-          </ul>
+      </div>
+      
+      <div class="container mt-4 pt-4 border-top border-secondary">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">© 2024 <span class="text-warning">Yannick Daantje</span>. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">Designed with <i class='bx bxs-heart text-warning'></i> by Yannick Daantje</p>
+          </div>
         </div>
-      </footer>
-    </div>
-    <!-- footer -->
+      </div>
+    </footer>
+    <!-- Footer Section End -->
 
 
   </main>
