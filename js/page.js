@@ -72,15 +72,22 @@ window.addEventListener('DOMContentLoaded', event => {
             const rect = bar.getBoundingClientRect();
             const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
             
-            if (isVisible) {
-                const width = bar.getAttribute('style').split(':')[1].trim();
-                bar.style.width = '0%';
+            // Check if this bar has already been animated
+            if (isVisible && !bar.classList.contains('animated')) {
+                // Add animated class to prevent re-animation
+                bar.classList.add('animated');
+                
+                // Animate to target width after a small delay
                 setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
+                    const targetWidth = bar.getAttribute('aria-valuenow') + '%';
+                    bar.style.width = targetWidth;
+                }, 300);
             }
         });
     };
+    
+    // Call once on page load with a delay to ensure elements are rendered
+    setTimeout(animateProgressBars, 500);
 
     // Call once on page load
     animateProgressBars();
