@@ -52,10 +52,10 @@ window.addEventListener('DOMContentLoaded', event => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 70, // Adjust for navbar height
@@ -71,12 +71,12 @@ window.addEventListener('DOMContentLoaded', event => {
         progressBars.forEach(bar => {
             const rect = bar.getBoundingClientRect();
             const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
-            
+
             // Check if this bar has already been animated
             if (isVisible && !bar.classList.contains('animated')) {
                 // Add animated class to prevent re-animation
                 bar.classList.add('animated');
-                
+
                 // Animate to target width after a small delay
                 setTimeout(() => {
                     const targetWidth = bar.getAttribute('aria-valuenow') + '%';
@@ -85,13 +85,13 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     };
-    
+
     // Call once on page load with a delay to ensure elements are rendered
     setTimeout(animateProgressBars, 500);
 
     // Call once on page load
     animateProgressBars();
-    
+
     // And on scroll
     window.addEventListener('scroll', animateProgressBars);
 
@@ -101,16 +101,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
     window.addEventListener('scroll', () => {
         let current = '';
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            
+
             if (window.scrollY >= (sectionTop - 200)) {
                 current = section.getAttribute('id');
             }
         });
-        
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href').substring(1) === current) {
@@ -118,4 +118,32 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Chatbase embed code (formatted)
+    (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+            window.chatbase = (...arguments) => {
+                if (!window.chatbase.q) window.chatbase.q = [];
+                window.chatbase.q.push(arguments);
+            };
+            window.chatbase = new Proxy(window.chatbase, {
+                get(target, prop) {
+                    if (prop === "q") return target.q;
+                    return (...args) => target(prop, ...args);
+                }
+            });
+        }
+        const onLoad = function () {
+            const script = document.createElement("script");
+            script.src = "https://www.chatbase.co/embed.min.js";
+            script.id = "mE1N5KyVbyiPtNNGYWBKr";
+            script.domain = "www.chatbase.co";
+            document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+            onLoad();
+        } else {
+            window.addEventListener("load", onLoad);
+        }
+    })();
 });
