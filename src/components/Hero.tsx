@@ -303,7 +303,7 @@ export default function Hero() {
             >
               <Box
                 component="img"
-                src="/img/profile.jpg"
+                src="/img/profilephoto.jpeg"
                 alt={profile.name}
                 sx={{
                   width: "100%",
